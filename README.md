@@ -3,7 +3,7 @@ How to Create EFS & Attach It to the EC2 Instances — EC2 Assignment 3
 
 **You have been asked to:**
 
-Create an EFS (Elastic File System)and connect it to different EC2 Instances. Make sure all instances have different operating system. For Instance: Ubuntu, Red Hat Linux and Amazon Linux 2.
+Create an EFS (Elastic File System) and connect it to different EC2 Instances. Make sure all instances have different operating system. For Instance: Ubuntu, Red Hat Linux and Amazon Linux 2.
 
 **Solution:**
 
