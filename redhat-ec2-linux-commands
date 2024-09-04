@@ -1,0 +1,16 @@
+cd Downloads
+ssh -i "Redhat EC2.pem" ec2-user@ec2-65-1-126-29.ap-south-1.compute.amazonaws.com
+sudo yum -y install nfs-utils
+sudo mkdir new_test 
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-07561978b61469e58.efs.ap-south-1.amazonaws.com:/ efs (Copy from your Amazon EFS System)
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-07561978b61469e58.efs.ap-south-1.amazonaws.com:/ new_dir (Replace the new_dir instead of efs)
+df -h
+cd new_test
+sudo mkdir testing
+ls
+cd testing
+sudo touch testing.txt
+ls
+sudo vi testing.txt
+:wq!
+cat testing.txt
