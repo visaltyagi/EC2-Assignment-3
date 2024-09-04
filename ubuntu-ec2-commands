@@ -1,0 +1,14 @@
+sudo apt-get update
+sudo apt-get -y install nfs-common
+sudo mkdir new_dir
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-07561978b61469e58.efs.ap-south-1.amazonaws.com:/ efs (as per your EFS mount)
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-07561978b61469e58.efs.ap-south-1.amazonaws.com:/ new_dir (Paste your directroy instead of new_dir)
+df -h
+cd new_dir
+sudo mkdir test
+cd test
+sudo echo test.txt
+sudo nano test.txt
+cat test.txt
+cd ..
+ls -lrt
