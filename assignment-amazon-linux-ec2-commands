@@ -1,0 +1,11 @@
+sudo yum -y install amazon-efs-utils
+sudo mkdir /efs
+sudo mount -t efs -o tls fs-e756978b6149e58:/ efs (As per your EFS Mount)
+sudo mount -t efs -o tls fs-e756978b6149e58:/ /efs (Put the /efs here)
+df -h
+cd /efs
+sudo mkdir hello
+cd hello
+sudo echo hello.txt
+sudo nano hello.txt
+cat hello.txt
