@@ -21,4 +21,4 @@ Create an EFS (Elastic File System) and connect it to different EC2 Instances. M
 
 If the EFS mounted successfully then the task has been successfully completed.
 
-For More Information, check the detailed guide over here: https://medium.com/devops-guides/how-to-create-efs-attach-it-to-the-ec2-instances-ec2-assignment-3-9af953930173
+**For More Information, check the detailed guide over here:** **https://medium.com/devops-guides/how-to-create-efs-attach-it-to-the-ec2-instances-ec2-assignment-3-9af953930173**
